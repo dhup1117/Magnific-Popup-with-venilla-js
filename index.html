@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- auto-popup starts-->
+  <div id="autopopup-option" class="auto_popup" >
+    <div id="close-button">
+      <button class="bg-transparent" onclick="close_popup()">X</button>
+    </div>
+    <h3 class=" pb-15">Get Discount 30% Off</h3>
+    <p>Get 20% discount with notified about the latest news and updates. No spam, we promise!
+    </p>
+    <form action="#" class="subscribe-area  pt-20">
+      <input type="email" placeholder="YOUR EMAIL">
+      <button>Subscribe</button>
+    </form>
+    <div class="checkbox pt-35">
+      <label for="checkbox"><input type="checkbox" id="checkbox">Don’st show this popup again</label>
+    </div>
+  </div>
+  <!-- auto_popup ends  -->
+  <div class="mg_popup">
+    <div class="popup_img">
+      <h2>click img to check Magnific Popup</h2>
+      <img onclick="mg_popup()" src="assets/img/product-42.png" alt="">
+    </div>
+    <div class="popup_item">
+      <div class="close-icon">
+        <button onclick="close_mg_popup()">X</button>
+      </div>
+      <p>hello how are you</p>
+    </div>
+  </div>
+<script src="venilla.js"></script>
+</body>
+</html>

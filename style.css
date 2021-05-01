@@ -1,0 +1,166 @@
+.auto_popup {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 30.4px 1.6px rgba(204, 204, 223, 0.5);
+    width: 630px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 999999999;
+    max-height: calc(100vh - 60px);
+    overflow: auto;
+    position: fixed;
+}
+
+#close-button {
+    right: 25px;
+    top: 20px;
+    position: absolute;
+}
+
+#close-button button {
+    border: none;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.auto_popup h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 58px;
+    text-align: center;
+}
+
+.auto_popup p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #898989;
+    text-transform: uppercase;
+    padding: 0 95px;
+    text-align: center;
+}
+.subscribe-area,
+.checkbox{
+    text-align: center;
+}
+.subscribe-area input {
+    width: 320px;
+    background-color: rgb(240, 245, 249);
+    height: 50px;
+    border: none;
+    padding-left: 20px;
+}
+
+.subscribe-area ::-webkit-input-placeholder {
+    color: #a1a1a1;
+    font-size: 11px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subscribe-area :-ms-input-placeholder {
+    color: #a1a1a1;
+    font-size: 11px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subscribe-area ::-ms-input-placeholder {
+    color: #a1a1a1;
+    font-size: 11px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subscribe-area ::placeholder {
+    color: #a1a1a1;
+    font-size: 11px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subscribe-area button {
+    border: none;
+    background-color: rgb(242, 101, 34);
+    height: 50px;
+    width: 170px;
+    margin-left: -4px;
+    font-size: 12px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: .6px;
+    font-family: 'Montserrat', sans-serif;
+}
+.checkbox{
+    position: relative;
+}
+.auto_popup .checkbox input[type="checkbox"],
+.create-account input[type="checkbox"] {
+    display: none;
+}
+
+.auto_popup .checkbox label {
+    font-size: 15px;
+    line-height: 26px;
+    color: #7d7d7d;
+}
+
+.auto_popup .checkbox label::before,
+.create-account label::before {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid rgb(183, 183, 183);
+    content: "";
+    position: absolute;
+    left: -22px;
+    bottom: 5.3px;
+    cursor: pointer;
+}
+
+.auto_popup .checkbox label {
+    position: relative;
+}
+
+.auto_popup .checkbox input[type="checkbox"]:checked,
+.create-account input[type="checkbox"]:checked {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgb(242, 101, 34);
+    appearance: none;
+    -webkit-appearance: none;
+    left: -19px;
+    bottom: 8.5px;
+    position: absolute;
+    display: block;
+
+}
+.auto_popup{
+    display: none;
+}
+.auto_popup.popup_active{
+    display: inline-block;
+}
+.popup_item {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 30.4px 1.6px rgba(204, 204, 223, 0.5);
+    width: 630px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    text-align: center;
+}
