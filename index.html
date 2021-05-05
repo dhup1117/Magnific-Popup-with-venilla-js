@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnifice popup with venilla js</title>
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">
+  <!--lightbox css place check the lightbox.css first line comment-->
+  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- auto-popup starts-->
-  <div id="autopopup-option" class="auto_popup" >
+  <div id="autopopup-option" class="auto_popup">
     <div id="close-button">
       <button class="bg-transparent" onclick="close_popup()">X</button>
     </div>
@@ -26,18 +30,33 @@
     </div>
   </div>
   <!-- auto_popup ends  -->
-  <div class="mg_popup">
-    <div class="popup_img">
-      <h2>click img to check Magnific Popup</h2>
-      <img onclick="mg_popup()" src="assets/img/product-42.png" alt="">
-    </div>
-    <div class="popup_item">
-      <div class="close-icon">
-        <button onclick="close_mg_popup()">X</button>
-      </div>
-      <p>hello how are you</p>
-    </div>
+  <!-- magnifice popup area start -->
+  <div class="container">
+    <a class="example-image-link" href="assets/img/product-42.png" data-lightbox="example-set"><img
+        class="example-image" src="assets/img/product-42.png" alt="" /></a>
+    <a class="example-image-link" href="assets/img/product-42.png" data-lightbox="example-set"><img
+        class="example-image" src="assets/img/product-42.png" alt="" /></a>
+    <a class="example-image-link" href="assets/img/product-42.png" data-lightbox="example-set"><img
+        class="example-image" src="assets/img/product-42.png" alt="" /></a>
   </div>
-<script src="venilla.js"></script>
+  <!-- magnifice popup area end -->
+
+  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+  <!--lightbox js-->
+  <script>
+    // auto popup
+    // auto popup timeout set
+    setTimeout(function () {
+      var open_popuo = document.querySelector("#autopopup-option");
+      open_popuo.classList.add('popup_active');
+    }, 2000);
+    // close auto popup
+    function close_popup() {
+      var auto_popu = document.querySelector('#autopopup-option');
+      auto_popu.classList.remove('popup_active');
+    }
+
+  </script>
 </body>
+
 </html>
