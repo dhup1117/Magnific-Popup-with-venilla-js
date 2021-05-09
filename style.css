@@ -1,3 +1,18 @@
+/* 
+some icon are set:
+preload icon:
+css line 177
+
+prev icon:
+css line 180
+
+next icon:
+css line 183
+
+close icon:
+css line 1186
+*/
+
 /* auto popup style */
 .auto_popup {
     background-color: rgb(255, 255, 255);
@@ -156,4 +171,17 @@
 /* auto popup show */
 .auto_popup.popup_active{
     display: inline-block;
+}
+/* some icon */
+.lb-cancel{
+    background: url(/assets/img/icon/loading.gif) no-repeat;
+}
+.lb-nav a.lb-prev {
+    background: url(assets/img/icon/prev.png) left 48% no-repeat;
+}
+.lb-nav a.lb-next{
+    background: url(assets/img/icon/next.png) right 48% no-repeat;
+}
+.lb-data .lb-close{
+    background: url(assets/img/icon/close.png) top right no-repeat;
 }
